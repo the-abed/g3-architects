@@ -9,6 +9,13 @@
 
 
 /*shared style*/
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 120px;
+}
 .btn-primary{
     background-color: rgba(255, 144, 14, 1);
     color: rgba(255, 255, 255, 1);
@@ -30,7 +37,7 @@
 }
 .dark3-font{
     color: #727272;
-    font-size: 1rem;
+   
 }
 
 /*header shared style*/
@@ -81,11 +88,93 @@
 }
 .banner-image{
     width: 100%;
+    margin-bottom: 30px;
+}
+/*teams banner related style*/
+.teams{
+    align-items: center;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+#quick-list{
+    font-weight: 400;
+}
+.features{
+    color: orange;
+}
+.teams-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.quick-feature{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.quick-feature-description{
+    margin: 24px auto;
+}
+/*some facts style*/
+.fact-description{
+    max-width: 540px;
+}
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+
+}
+.fact-card{
+    width: 240px;
+    height: 240px;
+    border: 1px solid  rgba(255, 144, 14, 1) ;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    /*margin-bottom: 150px;
+    
+    /*padding: 45px 35px 45px 35px;*/
+}
+.fact-number{
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
 }
 /*media query style*/
 @media screen and (max-width: 576px) {
-    .navbar,.nav-links{
+    .navbar,
+    .nav-links,
+    .teams{
         flex-direction: column;
     }
+    .teams-image-container,.fact-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .quick-feature{
+        margin-left: 20px;
+    }
+    .fact-container{
+       justify-content: center;
+
+         }
+}
+@media screen and (min-width: 576px) and (max-width:992px) {
+   .teams{
+    flex-direction: column;
+   }
+   .quick-feature{
+    margin: 50px auto;
+   }
+
     
 }
