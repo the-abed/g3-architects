@@ -90,7 +90,9 @@ This project helped practice:
 ## 👨‍💻 Author
 
 **Mohammad Abed**
+
 Junior Web Developer (MERN Stack)
+
 
 ---
 
